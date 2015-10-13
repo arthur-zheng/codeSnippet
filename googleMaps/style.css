@@ -1,0 +1,131 @@
+/*
+  *   by Arthur Zheng
+  *   10-11-2015
+*/
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, arial, sans-serif;
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+i.fa {
+  color:#679DF6;
+  font-size:1.3rem;
+  text-decoration: none;
+  padding-left: 3px;
+}
+.phone a{
+  text-decoration: none;
+  margin:0;
+}
+.phone a:hover{
+  color:#679DF6;
+  text-decoration: underline;
+}
+
+.result-box {
+  position: absolute;
+  display: table-row;
+  z-index: 1;
+  
+  font-size: 1.3rem;
+  top: 4.2rem;
+  width: 29.8rem;
+  max-height:90vh;
+  margin-bottom:0;
+  overflow: scroll;
+  margin-left: 1.3rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+.result-item {
+  width: 300px;
+  border-bottom: 1px solid #ddd;
+  background-color: white;
+}
+.result-item .place-img-wrapper{
+  display: table-cell;
+}
+.result-item .place-img-wrapper .img {
+  width: 70px;
+  height: 90px;
+  background: #ccc no-repeat center url("images/placeholder.jpg");
+  background-size: cover;
+  
+}
+.place-detail{
+  vertical-align: top;    
+  display: table-cell;
+  
+  padding: 10px;
+  width: 200px;
+}
+.place-detail__name {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  
+  width: 21rem;
+  font-weight: 500;
+  color: #242424;
+  font-size: 1.4rem;
+}
+.place-detail__address {
+  color: #676765;
+  height: 3.2rem;
+  margin: .2rem 0;
+  overflow: hidden;
+}
+/*
+  from google example
+  START
+*/
+#map {
+  height: 100%;
+}
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 300px;
+}
+
+#pac-input:focus {
+  border-color: #4d90fe;
+}
+
+#type-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  padding: 5px 11px 0px 11px;
+}
+
+#type-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+#target {
+  width: 345px;
+}
+/*
+  from google example
+  END
+*/

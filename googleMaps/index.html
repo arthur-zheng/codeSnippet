@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" async>
+    <title>Places Searchbox</title>
+  </head>
+  <body>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+    
+    <!--the result list-->
+    <div class="result-box" style="display:block">
+      <!--<div class="result-item">
+        <div class="place-img-wrapper">
+          <div class="img"></div>
+        </div>
+        <div class="place-detail">
+          <div class="place-detail__top">
+            <div class="place-detail__name">YY Construction ConstructionConstruction</div>
+          </div>
+          <div class="place-detail__address">
+            2/1-11 Canterbury Rd, Canterbury NSW 2193, Australia 2/1-11 Canterbury Rd, Canterbury NSW 2193, Australia
+          </div>
+          <div class="place-detail__others">
+            <span class="link phone">
+              <i class="fa fa-phone"></i>
+              <a href="" target="_blank">(02) 9007 9760</a>
+            </span>
+            <a href="http://www.yyconstruction.com/" target="_blank"><i class="fa fa-globe"></i></a>
+            <a href="https://plus.google.com/106825341736005171074/about?hl=en-US" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+          </div>
+        </div>
+      </div>-->
+    </div>
+    
+    <div id="map"></div>
+    
+    <script id="result-item-template" type="text/x-handlebars-template">
+        <div class="result-item">
+            <div class="place-img-wrapper">
+                <div class="img" {{#if photo}}style="background-image:url({{photo}})"{{/if}}></div>
+            </div>
+            <div class="place-detail">
+              <div class="place-detail__top">
+                <div class="place-detail__name">{{name}}</div>
+              </div>
+              <div class="place-detail__address">
+                {{address}}
+              </div>
+              <div class="place-detail__others">
+                <span class="link phone">
+                  {{#if phone}}
+                    <i class="fa fa-phone"></i>
+                    {{phone}}
+                  {{/if}}
+                </span>
+                {{#if website}}
+                  <a href="{{website}}" target="_blank"><i class="fa fa-globe"></i></a>
+                {{/if}}
+                {{#if google-plus}}
+                  <a href="{{google-plus}}" target="_blank"><i class="fa fa-google-plus-square"></i></a>
+                {{/if}}
+              </div>
+            </div>
+        </div>
+    </script>
+    
+    <!--the templating lib-->
+    <script src="lib/jquery-2.1.4.min.js"></script>
+    <!--the actually javascript file for this page-->
+    <script src="script.js"></script>
+    <!--google maps lib-->
+    <script src="https://maps.googleapis.com/maps/api/js?&libraries=places&callback=init"></script>
+    <!--the templating lib-->
+    <script src="lib/handlebars-v4.0.2.js"></script>
+    
+  </body>
+</html>
