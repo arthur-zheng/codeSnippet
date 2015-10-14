@@ -11,6 +11,6 @@ Simply drag index.html into your browser, and search something such as "in n out
 1. Pickup Google API documents.(spent some time on getUrl() function to get image urls, please see comments)
 2. Trying to be looked same to Google existing UI using css styles.
 
-# Feedback from Zenefits
+### Feedback from Zenefits
 - results container had unnecessary overflow issues that made the submission seem not 100% complete 
 - suboptimal UX - pins and results not tied to each other - clicking one did not highlight the other
